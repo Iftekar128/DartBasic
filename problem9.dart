@@ -1,8 +1,9 @@
-import 'dart:io';
+import'dart:io';
 
-void main() {
-  for (int i = 0; i < 101; i++) {
-    if (i == 41) continue;
-    print(i);
-  }
+void main(){
+  stdout.write('Enter a name : ');
+  String name=stdin.readLineSync()!;
+  String res = name.replaceAll(RegExp(r"\s+"), "");
+
+  print(res);
 }

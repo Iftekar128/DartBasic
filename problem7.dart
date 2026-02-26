@@ -1,12 +1,14 @@
-import 'dart:io';
+import'dart:io';
+void main(){
+  stdout.write("Enter a Number : ");
+  int a = int.parse(stdin.readLineSync()!);
 
-void main() {
-  for (int i = 0; i <= 9; i++) {
-    print('Multiplication table of $i');
-     for (int j = 0; j <= 10; j++) {
-      print("$i x $j = ${i * j}");
-    }
-  }
- 
-  print("");
+  stdout.write("Enter another Number");
+  int b = int.parse(stdin.readLineSync()!);
+
+  double q = a/b;
+  int r = a%b;
+  print(q);
+  print(r);
+  
 }

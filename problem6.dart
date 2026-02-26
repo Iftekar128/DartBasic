@@ -1,10 +1,10 @@
 import'dart:io';
-
 void main(){
-  stdout.write('Enter a Number : ');
-  int n = int.parse(stdin.readLineSync()!);
+  stdout.write('First Name : ');
+  String firstName = stdin.readLineSync()!;
 
-  for(int i=0;i<=10;i++){
-    print('$n x $i =${n*i}');
-  }
+  stdout.write('Last Name : ');
+  String lastName = stdin.readLineSync()!;
+
+  print(firstName+" "+lastName);
 }
