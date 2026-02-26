@@ -1,0 +1,11 @@
+import 'dart:io';
+
+void main() {
+  stdout.write("Enter a number: ");
+  int number = int.parse(stdin.readLineSync()!);
+
+  int res = number * number; 
+
+  print(res);
+
+}
